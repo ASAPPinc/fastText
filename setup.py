@@ -20,6 +20,8 @@ import os
 import subprocess
 
 __version__ = '0.8.22'
+asapp_version = 'asapp02'
+__version__ = __version__ + asapp_version
 FASTTEXT_SRC = "src"
 
 # Based on https://github.com/pybind/python_example
@@ -187,7 +189,7 @@ setup(
         'Operating System :: Unix',
         'Operating System :: MacOS',
     ],
-    install_requires=['pybind11>=2.2', "setuptools >= 0.7.0", "numpy"],
+    install_requires=['pybind11>=2.2', "setuptools >= 0.7.0", "numpy", "Cython"],
     cmdclass={'build_ext': BuildExt},
     packages=[
         str('fastText'),
@@ -196,4 +198,5 @@ setup(
     ],
     package_dir={str(''): str('python')},
     zip_safe=False,
+
 )
