@@ -18,7 +18,7 @@ import sys
 import setuptools
 import os
 
-__version__ = '0.8.22'
+__version__ = '0.8.23'
 FASTTEXT_SRC = "src"
 
 # Based on https://github.com/pybind/python_example
