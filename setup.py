@@ -20,7 +20,7 @@ import os
 import subprocess
 
 __version__ = '0.8.22'
-asapp_version = 'asapp02'
+asapp_version = 'asapp03'
 __version__ = __version__ + asapp_version
 FASTTEXT_SRC = "src"
 
