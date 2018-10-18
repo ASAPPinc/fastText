@@ -20,7 +20,7 @@ import os
 import subprocess
 
 __version__ = '0.8.22'
-asapp_version = 'asapp03'
+asapp_version = 'asapp04'
 __version__ = __version__ + asapp_version
 FASTTEXT_SRC = "src"
 
@@ -189,7 +189,7 @@ setup(
         'Operating System :: Unix',
         'Operating System :: MacOS',
     ],
-    install_requires=['pybind11>=2.2', "setuptools >= 0.7.0", "numpy", "Cython"],
+    install_requires=['pybind11>=2.2', "setuptools >= 0.7.0", "numpy", "Cython", "torch==0.4.1"],
     cmdclass={'build_ext': BuildExt},
     packages=[
         str('fastText'),
